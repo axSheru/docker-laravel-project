@@ -46,3 +46,11 @@ __The stream or file "/var/www/html/storage/logs/laravel.log" could not be opene
 Ejecutamos el siguiente comando:
 
 ```docker exec -it laravel-project_server_1 chmod 777 -R /var/www/html```
+
+Una vez levantados los contenedores, para correr comandos de artisan usamos el comando siguiente:
+
+```docker-compose run --rm artisan [COMANDO]```
+
+Para correr un comando de npm usamos:
+
+```docker-compose run --rm npm [COMANDO]```
