@@ -28,3 +28,19 @@ DB_DATABASE=homestead
 DB_USERNAME=homestead
 DB_PASSWORD=secret
 ```
+
+Puedes probar que todo funcione correctamente corriendo el comando:
+
+```docker-compose up -d server```
+
+Y en tu navegador debes de acceder a la siguiente dirección:
+
+__http://localhost:8000/__
+
+**Nota:** Si llegas a obtener un error de este tipo:
+
+__The stream or file "/var/www/html/storage/logs/laravel.log" could not be opened in append mode: Failed to open stream: Permission denied__
+
+Ejecuta el siguiente comando:
+
+```docker exec -it laravel-project_server_1 chmod 777 -R /var/www/html```
