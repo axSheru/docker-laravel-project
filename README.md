@@ -31,9 +31,9 @@ DB_PASSWORD=secret
 
 Puedes probar que todo funcione correctamente corriendo el comando:
 
-```docker-compose up -d server```
+```docker-compose up -d --build server```
 
-Y en tu navegador debes de acceder a la siguiente dirección:
+Posteriormente en tu navegador debes de acceder a la siguiente dirección y debes de poder ver la pantalla de inicio de Laravel:
 
 __http://localhost:8000/__
 
